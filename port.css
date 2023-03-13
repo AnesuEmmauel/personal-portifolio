@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis:wght@600&display=swap');
 
 
 body{
@@ -6,23 +6,50 @@ body{
 }
 #wrapper{
     background-color: khaki;
+    margin-bottom: 40px;
+}
+.nav{
+    background-color:darkslategrey;
+
 }
 .nav-content{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: stretch;
+    height: max-content;
+    padding: 0px;
+    position: relative;
 }
 .nav-content a{
-    padding: 20px;
+    padding: 0px 3px 0px 3px;
+    text-decoration: none;
+    height: max-content;
+    margin: 0px 10px 0px 10px;
+    color: white;
+    font-size: 20px;
+
+}
+.nav-content a:hover {
+    background-color: lime;
+    color: darkslategrey;
+}
+.nav-content li{
+    list-style: none;
 }
 #name{
     font-size: 50px;
     margin-left: 35px;
-    margin-bottom: 30px;
+    text-transform: uppercase;
+    transform: scale();
 }
 .description{
     margin-left: 15%;
+    margin-bottom: 120px;
+    height: 150px;
+    position: relative;
+    top: 50px;
+    text-align: center;
 }
 .projects{
     position: relative;
@@ -31,6 +58,14 @@ body{
     margin : 0;
     color: white;
     
+}
+#project-link{
+    background-color: teal;
+    color: white;
+}
+#project-link a{
+    text-decoration: none;
+    color: white;
 }
 #project-intro{
     padding: 15px;
@@ -54,12 +89,40 @@ body{
     width: max-content;
     font-family: calibri;
 }
-.about{
+#about{
     background-color: lavender;
-    
+    font-family: dosis;
+    font-size: 150%;
+}
+.contact-intro {
+    background-color: lime;
+    width: max-content;
+    font-family: calibri;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#contact a{
+    text-decoration: none;
+    color: black;
+}
+#contact{
+    background-color: antiquewhite;
+    width: 50%;
+    margin-left: 45px;
+    border: solid black;
+    border-style: dashed;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 7px black;
+    margin-top: 40px;
 }
 @media (max-width:600px){
     .projects img{
         height: 250px;
+    }
+    #contact{
+        width: max-content;
+    }
+    #about{
+        font-size: large;
     }
 }
