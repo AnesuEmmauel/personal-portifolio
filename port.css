@@ -73,6 +73,9 @@ body{
     width: 70%;
     height: 400px;
     margin: 15px;
+    box-shadow: 3px 3px 15px 7px rgba(255, 255, 255, 0.596);
+    border-radius: 50px;
+
 }
 .project-preview{
     text-align: center;
@@ -113,6 +116,21 @@ body{
     box-shadow: 2px 2px 8px 7px black;
     margin-top: 40px;
 }
+#whatsapp{
+    height: 200px;
+    width: 150px;
+    border-radius: 10px;
+}
+#skills-icons img{
+    width: 35px;
+    height: 35px;
+    padding:2px;
+}
+#mynumber{
+    background-color: rgb(29, 175, 119);
+    width: max-content;
+    font-size: large;
+}
 @media (max-width:600px){
     .projects img{
         height: 250px;
@@ -127,6 +145,7 @@ body{
 @media (max-width:450px){
     #contact{
         margin-left: 0px;
+        width: max-content;
     }
     .description{
         margin-left: 0px;
